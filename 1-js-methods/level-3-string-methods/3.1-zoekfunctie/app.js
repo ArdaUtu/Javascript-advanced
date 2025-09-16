@@ -10,8 +10,8 @@ function zoekFilms(films, zoekterm) {
 }
 
 // // Test de functie
-// console.log('Zoek "the":', zoekFilms(films, 'the'));
-// console.log('Zoek "a":', zoekFilms(films, 'a'));
-// console.log('Verwacht voor "the": ["The Matrix"]');
+console.log('Zoek "the":', zoekFilms(films, 'the'));
+console.log('Zoek "a":', zoekFilms(films, 'a'));
+console.log('Verwacht voor "the": ["The Matrix"]');
 
 console.log(zoekFilms(films, "Avatar"))
