@@ -6,10 +6,12 @@ console.log('Alle films:', films);
 
 function zoekFilms(films, zoekterm) {
     // TODO: Return films die de zoekterm bevatten
-    return /* jouw code hier */;
+    return films.filter(film => film.toLowerCase().includes(zoekterm.toLowerCase())); /* jouw code hier */;
 }
 
-// Test de functie
-console.log('Zoek "the":', zoekFilms(films, 'the'));
-console.log('Zoek "a":', zoekFilms(films, 'a'));
-console.log('Verwacht voor "the": ["The Matrix"]');
+// // Test de functie
+// console.log('Zoek "the":', zoekFilms(films, 'the'));
+// console.log('Zoek "a":', zoekFilms(films, 'a'));
+// console.log('Verwacht voor "the": ["The Matrix"]');
+
+console.log(zoekFilms(films, "Avatar"))

@@ -53,7 +53,7 @@ Om Local Storage te gebruiken met formulieren, moet je weten hoe je data uit HTM
 ```javascript
 // Haal een element op via zijn ID
 const inputElement = document.getElementById('naam-input');
-const outputElement = document.getElementById('welkom-bericht');
+const outputElement = document.getElementById('welkom-verwijder');
 ```
 
 #### Input Waarde Ophalen
