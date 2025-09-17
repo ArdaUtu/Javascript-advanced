@@ -6,7 +6,7 @@ function slaProfielOp() {
     const naam = document.getElementById('naam').value; /* jouw code hier */;
     const email = document.getElementById('email').value;/* jouw code hier */;
     const leeftijd = document.getElementById('leeftijd').value; /* jouw code hier */;
-    const kleur = document.getElementById(kleur).value;/* jouw code hier */;
+    const kleur = document.getElementById('kleur').value;/* jouw code hier */;
     
     // TODO: Valideer verplichte velden
     if (naam === '' && email === '')/* jouw code hier - check naam en email */ {
@@ -15,10 +15,10 @@ function slaProfielOp() {
     }
     
     // TODO: Sla elk veld apart op in localStorage
-    localStorage.setItem('profiel-naam', value /* jouw code hier */);
-    localStorage.setItem('profiel-email', value /* jouw code hier */);
-    localStorage.setItem('profiel-leeftijd', value /* jouw code hier */);
-    localStorage.setItem('profiel-kleur', value /* jouw code hier */);
+    localStorage.setItem('profiel-naam', naam );
+    localStorage.setItem('profiel-email', email /* jouw code hier */);
+    localStorage.setItem('profiel-leeftijd', leeftijd /* jouw code hier */);
+    localStorage.setItem('profiel-kleur', kleur /* jouw code hier */);
     
     // TODO: Sla ook opslag datum op
     localStorage.setItem('profiel-opgeslagen', new Date().toLocaleString/* jouw code hier - gebruik new Date() */);
@@ -63,7 +63,7 @@ function toonProfiel() {
     const opgeslagenOp = localStorage.getItem('profiel-opgeslagenOp') /* jouw code hier */;
     
     // TODO: Check of er profiel data is
-    if (/* jouw code hier - check of naam bestaat */) {
+    if (/* jouw code hier - check of naam bestaat */naam) {
         // TODO: Toon profiel gegevens
         container.innerHTML = `
             <h3>Opgeslagen Profiel:</h3>
