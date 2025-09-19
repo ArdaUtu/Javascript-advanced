@@ -17,7 +17,7 @@ function voegTaakToe() {
     
     // TODO: Sla taken op in localStorage
     /* jouw code hier - gebruik JSON.stringify */;
-    localStorage.setItem('gebruikerData', JSON.stringify(gebruiker));
+    localStorage.setItem('gebruikerData', JSON.stringify('taken'));
     // Maak input leeg en update UI
     input.value = '';
     toonTaken();
