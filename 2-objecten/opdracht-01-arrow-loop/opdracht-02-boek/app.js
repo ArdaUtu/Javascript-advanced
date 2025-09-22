@@ -1,5 +1,22 @@
 // Maak een boek object waar je allemaal gegevens van een boek in kunt opslaan en tonen op het scherm.
+const book = {
+ Titel: "The Great Gatsby",
+  auteur: "F. Scott Fitzgerald",
+  uitgever: "Charles Scribner's Sons",
+  jaar: 1925,
+  verkocht: 25000000,
+  prijs: "$10.99"
+};
 
+
+const outputDiv = document.querySelector('.output');
+
+
+for (const property in book) {
+  const p = document.createElement('h1');
+  p.textContent = `${property.charAt(0).toUpperCase() + property.slice(1)}: ${book[property]}`;
+  outputDiv.appendChild(p);
+}
 // Het object moet de volgende properties bevatten:
 
 //     Titel: de titel van het boek (string)

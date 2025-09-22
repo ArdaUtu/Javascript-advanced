@@ -67,8 +67,8 @@ function toonProfiel() {
         // TODO: Toon profiel gegevens
         container.innerHTML = `
             <h3>Opgeslagen Profiel:</h3>
-            <p><strong>Naam:</strong> ${naam/* jouw code hier */}</p>
-            <p><strong>Email:</strong> ${email/* jouw code hier */}</p>
+            <p><strong>Naam:</strong> ${naam}</p>
+            <p><strong>Email:</strong> ${email}</p>
             <p><strong>Leeftijd:</strong> ${leeftijd || 'Niet ingevuld'}</p>
             <p><strong>Favoriete kleur:</strong> ${kleur || 'Niet gekozen'}</p>
             <p><strong>Opgeslagen op:</strong> ${opgeslagenOp || 'Onbekend'}</p>
