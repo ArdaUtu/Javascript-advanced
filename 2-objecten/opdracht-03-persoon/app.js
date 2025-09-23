@@ -1,5 +1,39 @@
 // Stap 1
+const persoon = {
+naam: "arda",
+leeftijd: "18",
+geboortedatum: "24 juni 2007",
+geslacht: "man",
+inleven: true,
+hobbys: ["gamen"],
 
+veranderNaam: function(name){
+this.naam = name
+},
+veranderStatus: function(status){
+this.inleven = status
+},
+veranderHobby: function(newHobby){
+    this.hobbys.push(newHobby)
+
+}
+};
+
+
+persoon.veranderHobby("voetballen")
+persoon.veranderStatus(false)
+persoon.veranderNaam("pieter")
+
+//omdat de output een class is moet er een punt erachter
+document.querySelector('.output').innerHTML = `
+<h2>${persoon.naam}</h2>
+<p>${persoon.leeftijd}</p>
+<p>${persoon.geboortedatum}</p>
+<p>${persoon.geslacht}</p>
+<p>${persoon.inleven}</p>
+<p>${persoon.hobbys}</p>
+`
+;
 // Maak een persoon object waar je allemaal eigenschappen van een persoon in kunt opslaan en tonen op het scherm.
 
 // Het object moet de volgende properties bevatten:
