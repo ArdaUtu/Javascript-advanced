@@ -14,7 +14,7 @@ veranderStatus: function(status){
 this.inleven = status
 },
 veranderHobby: function(newHobby){
-    this.hobbys.push(newHobby)
+this.hobbys.push(newHobby)
 
 }
 };
