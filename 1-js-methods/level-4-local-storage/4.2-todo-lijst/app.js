@@ -68,7 +68,7 @@ function verwijderTaak(index) {
 function wisAlleTaken() {
     if (confirm('Weet je zeker dat je alle taken wilt wissen?')) {
         // TODO: Maak array leeg
-        taken = []; /* jouw code hier */
+        taken = [];  /* jouw code hier */ 
         
         // TODO: Verwijder uit localStorage
         /* jouw code hier - gebruik removeItem */;
