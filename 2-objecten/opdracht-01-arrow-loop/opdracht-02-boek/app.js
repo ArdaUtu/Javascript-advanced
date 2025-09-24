@@ -1,4 +1,5 @@
 // Maak een boek object waar je allemaal gegevens van een boek in kunt opslaan en tonen op het scherm.
+//Volgende keer die rode code in het engels schrijven bijv: titel, auteur.
 const book = {
  titel: "The Great Gatsby",
   auteur: "F. Scott Fitzgerald",

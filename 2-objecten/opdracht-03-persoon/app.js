@@ -1,17 +1,17 @@
 // Stap 1
 const persoon = {
-naam: "arda",
-leeftijd: "18",
-geboortedatum: "24 juni 2007",
-geslacht: "man",
-inleven: true,
+name: "arda",
+age: "18",
+birth: "24 juni 2007",
+sex: "man",
+status: true,
 hobbys: ["gamen"],
 
-veranderNaam: function(name){
-this.naam = name
+veranderName: function(name){
+this.name = name
 },
 veranderStatus: function(status){
-this.inleven = status
+this.status = status
 },
 veranderHobby: function(newHobby){
 this.hobbys.push(newHobby)
@@ -22,15 +22,15 @@ this.hobbys.push(newHobby)
 
 persoon.veranderHobby("voetballen")
 persoon.veranderStatus(false)
-persoon.veranderNaam("pieter")
+persoon.veranderName("arda")
 
 //omdat de output een class is moet er een punt erachter
 document.querySelector('.output').innerHTML = `
-<h2>${persoon.naam}</h2>
-<p>${persoon.leeftijd}</p>
-<p>${persoon.geboortedatum}</p>
-<p>${persoon.geslacht}</p>
-<p>${persoon.inleven}</p>
+<h2>${persoon.name}</h2>
+<p>${persoon.age}</p>
+<p>${persoon.birth}</p>
+<p>${persoon.sex}</p>
+<p>${persoon.status}</p>
 <p>${persoon.hobbys}</p>
 `
 ;
