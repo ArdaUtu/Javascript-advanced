@@ -1,1 +1,33 @@
-// maak functie car
+
+[
+  {
+    "name": "Susan Andrews",
+    "age": 30,
+    "image": "susan.jpg"
+  },
+  {
+    "name": "John Doe",
+    "age": 25,
+    "image": "john.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "age": 28,
+    "image": "jane.jpg"
+  },
+  {
+    "name": "Michael Johnson",
+    "age": 35,
+    "image": "michael.jpg"
+  },
+  {
+    "name": "Emily Davis",
+    "age": 22,
+    "image": "emily.jpg"
+  },
+  {
+    "name": "David Wilson",
+    "age": 40,
+    "image": "david.jpg"
+  }
+]
