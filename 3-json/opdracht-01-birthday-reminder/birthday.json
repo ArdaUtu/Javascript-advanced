@@ -1,33 +1,28 @@
 
 [
   {
-    "name": "Susan Andrews",
-    "age": 30,
-    "image": "susan.jpg"
+    "name": "Bertie Yates",
+    "age": 29,
+    "image": "./img/image.png"
   },
   {
-    "name": "John Doe",
-    "age": 25,
-    "image": "john.jpg"
+    "name": "Hester Hogan",
+    "age": 32,
+    "image": "./img/image5.png"
   },
   {
-    "name": "Jane Smith",
-    "age": 28,
-    "image": "jane.jpg"
+    "name": "Larry Little",
+    "age": 36,
+    "image": "./img/image3.png"
   },
   {
-    "name": "Michael Johnson",
-    "age": 35,
-    "image": "michael.jpg"
+    "name": "Sean Walsh",
+    "age": 34,
+    "image": "./img/image2.png"
   },
   {
-    "name": "Emily Davis",
-    "age": 22,
-    "image": "emily.jpg"
-  },
-  {
-    "name": "David Wilson",
-    "age": 40,
-    "image": "david.jpg"
+    "name": "Lola Gardener",
+    "age": 29,
+    "image": "./img/image4.png"
   }
 ]

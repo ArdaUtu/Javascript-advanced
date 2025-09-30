@@ -1,0 +1,75 @@
+body {
+  background-color: #f8eafd;
+}
+
+.BodyCenter {
+  background-color: white;
+  padding: 40px 32px 24px 32px;
+  max-width: 420px;
+  margin: 40px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  position: static;
+  left: 0;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.birthday-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  left: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.birthday-item h2 {
+  font-size: 1.2rem;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.birthday-item p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.AmountOfPeople h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #23263a;
+  text-align: left;
+}
+
+.clear-button {
+  width: 100%;
+  background: #e040fb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.clear-button:hover {
+  background: #c026d3;
+}

@@ -9,33 +9,43 @@
 
 const clearButton = document.querySelector('.clear-button');
 const birthdayContainer = document.querySelector('.birthday');
+const AmountBirthday = document.querySelector('.AmountOfPeople');
 
 // JSON data met zes personen
 
 
 
-function renderBirthdays() {
-  birthdayContainer.innerHTML = `
-    <h2>${birthdays.length} Verjaardagen vandaag</h2>
-    <div class="birthday-list">
-      ${birthdays.map(birthday => `
-        <div class="birthday-item">
-          <img src="${birthday.image}" alt="${birthday.name}">
-          <div>
-            <h2>${birthday.name}</h2>
-            <p>Leeftijd: ${birthday.age}</p>
-          </div>
-        </div>
-      `).join('')}
-    </div>
-  `;
-}
-
-renderBirthdays();
-
-clearButton.addEventListener('click', function() {
-  birthdayContainer.innerHTML = '';
+fetch("./birthday.json")
+.then((response) => response.json())
+.then((birthday) => {
+    
+clearButton.addEventListener('click', function(){
+    birthdayContainer.innerHTML = "";
+    AmountBirthday.innerHTML = `<h2>0 verjaardagen vandaag</h2>`;
+    birthday = [];
 });
+    AmountBirthday.innerHTML = `<h2>${birthday.length} verjaardagen vandaag</h2>`
+for (let mensen of birthday){
+    birthdayContainer.innerHTML
+     += `
+     <div>
+    <h2>Naam: ${mensen.name}</h2>
+    <h3>Leeftijd: ${mensen.age}</h3>
+    <img class="image" src="${mensen.image}">
+    </div>
+`;
+}
+});
+
+
+//alle afbeeldingen in een image folder
+//styling
+//de lengte van birthday in een h2
+
+
+
+
+
 
 
 
