@@ -1,0 +1,13 @@
+.InnerBody{
+background-color: rgb(132, 190, 171);    
+padding: 5%;
+border-style: double;
+width: 20%;
+position: absolute;
+right: 40%;
+}
+
+
+.image{
+border-radius: 10%;
+}
